@@ -1,0 +1,401 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Dbugger</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<!-- Favicons -->
+	<link href="{% static 'images/favicon.png' %}" rel="icon">
+	<link href="{% static 'images/favicon.png' %}" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+	<link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="{% static 'styles.css' %}" rel="stylesheet">
+
+	<!-- =======================================================
+  * Template Name: FlexStart - v1.11.1
+  * Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+	<!-- ======= Header ======= -->
+	<header id="header" class="header fixed-top">
+		<div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+			<a href="" class="logo d-flex align-items-center">
+				<img src="{% static 'images/dbugger_logo.png' %}" alt="logo">
+				<span></span>
+			</a>
+
+			<nav id="navbar" class="navbar">
+				<ul>
+					<li><a class="nav-link scrollto active" href="">Home</a></li>
+					<li><a class="nav-link scrollto" href="#about">About</a></li>
+					<li><a class="nav-link scrollto" href="#recent-blog-posts">Our Courses</a></li>
+					<li><a class="nav-link scrollto" href="#services">Services</a></li>
+					<li><a class="nav-link scrollto" href="">Team</a></li>
+					<!-- <li><a href="blog.html">Blog</a></li> -->
+
+					<li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+					<li  style="margin-left: 2rem;"><a class="getstarted scrollto" href="/log">Log In</a></li>
+					<li><a class="getstarted scrollto" href="/reg">Sign Up</a></li>
+				</ul>
+				<i class="bi bi-list mobile-nav-toggle"></i>
+			</nav><!-- .navbar -->
+
+		</div>
+	</header><!-- End Header -->
+
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="hero d-flex align-items-center" style="background: url('{% static "images/hero-bg.png"%}') no-repeat center top;">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 d-flex flex-column justify-content-center">
+					<h1 data-aos="fade-up">Here's the<br />right <span style="color: orangered">course</span> for you</h1>
+					<h2 data-aos="fade-up" data-aos-delay="400"></h2>
+					<div data-aos="fade-up" data-aos-delay="600">
+						<div class="text-center text-lg-start">
+							<a href="#about"
+								class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+								<span>Discover More</span>
+								<i class="bi bi-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+					<img src="{% static 'images/hero-img.png' %}" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+
+	</section><!-- End Hero -->
+
+	<main id="main">
+		<!-- ======= About Section ======= -->
+		<section id="about" class="about">
+
+			<div class="container" data-aos="fade-up">
+				<div class="row gx-0">
+
+					<div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up"
+						data-aos-delay="200">
+						<div class="content">
+							<!-- <h3>Who We Are</h3> -->
+							<h3>There is Always One More Bug to Fix</h3>
+							<p>
+								Need help starting your Coding Journey? Look no further. Join our Coding Community to
+								receive Premium
+								Coding Content along with Personal Guidance from your mentors who are proficient in
+								various domains like
+								Web Development, Competitive Programming, DSA and various other Programming Languages.
+							</p>
+							<div class="text-center text-lg-start">
+								<!-- <a href="#"
+									class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
+									<span>Read More</span>
+									<i class="bi bi-arrow-right"></i>
+								</a> -->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
+						<!-- <img src="{% static 'images/about.jpg' %}" class="img-fluid" alt=""> -->
+						<iframe width="100%" height="415" src="https://drive.google.com/file/d/1HUIy5dHYfVOGue-IG39B_tgTAU63HiRz/preview" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- End About Section -->
+
+		<section id="recent-blog-posts" class="recent-blog-posts">
+
+			<div class="container" data-aos="fade-up">
+
+				<header class="section-header">
+					<p style="color: #000000;">Our Courses</p>
+					<!-- <p>Recent posts form our Blog</p> -->
+				</header>
+
+				<div class="row">
+
+					<div class="col-lg-4">
+						<div class="post-box">
+							<div class="post-img"><img src="{% static 'images/cpp.jpg' %}" alt="DSA" class="img-fluid"></div>
+							<!-- <span class="post-date">Tue, September 15</span> -->
+							<h3 class="post-title">Introduction to C++</h3>
+							<a href="log" class="readmore stretched-link mt-auto"><span>Enroll Now</span><i
+									class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="post-box">
+							<div class="post-img"><img src="{% static 'images/dsa.png' %}" class="img-fluid"
+									alt=""></div>
+							<!-- <span class="post-date">Fri, August 28</span> -->
+							<h3 class="post-title">DSA Course (Upcoming)</h3>
+							<a href="log" class="readmore stretched-link mt-auto"><span>Enroll Now</span><i
+									class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="post-box">
+							<div class="post-img"><img src="{% static 'images/dev.jpg' %}" class="img-fluid"
+									alt=""></div>
+							<!-- <span class="post-date">Mon, July 11</span> -->
+							<h3 class="post-title">Web Development Course</h3>
+							<a href="log" class="readmore stretched-link mt-auto"><span>Enroll Now</span><i
+									class="bi bi-arrow-right"></i></a>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- End Recent Blog Posts Section -->
+
+		<!-- ======= Services Section ======= -->
+		<section id="services" class="services">
+
+			<div class="container" data-aos="fade-up">
+
+				<header class="section-header">
+					<p style="font-size: 38px;color: #000000;">Services</p>
+					<!-- <p>Veritatis et dolores facere numquam et praesentium</p> -->
+				</header>
+
+				<div class="row gy-4">
+
+					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+						<div class="service-box blue">
+							<!-- <i class="ri-discuss-line icon"></i> -->
+							<!-- <i class="fa-solid fa-video"></i> -->
+							<img src="{% static 'images/laptop.png' %}">
+							<p></p>
+							<h3>Video Lectures</h3>
+							<p>Our videos lectures will be beginner friendly.</p>
+							<!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+						<div class="service-box orange">
+							<img style="padding: 8px;" src="{% static 'images/problems.png' %}">
+							<p></p>
+							<h3>Problem Sets</h3>
+							<p>Curated problem set will be provided to make your concepts clear.</p>
+							<!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+						<div class="service-box green">
+							<img src="{% static 'images/doubts.png' %}">
+							<p></p>
+							<h3>Personalized Doubt Solving</h3>
+							<p>You can directly contact our educators and get your doubts cleared.</p>
+							<!-- <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a> -->
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- End Services Section -->
+
+		<!-- ======= Contact Section ======= -->
+		<section id="contact" class="contact">
+
+			<div class="container" data-aos="fade-up">
+
+				<header class="section-header">
+					<h2></h2>
+					<p style="font-size: 38px;color: #000000;">Contact Us</p>
+				</header>
+
+				<div class="row gy-4">
+
+					<div class="col-lg-6">
+
+						<div class="row gy-4">
+							<div class="col-md-6">
+							<a target="_blank" href="https://www.google.com/maps/place/Nit+Boys+Hostel+Sirpur/@21.248518,81.6091021,18.61z/data=!4m6!3m5!1s0x3a28dd79a500dfa7:0x1f00563c494340ad!8m2!3d21.2486775!4d81.6097595!16s%2Fg%2F11s4jvqkjh">
+
+								<div class="info-box">
+									<i class="bi bi-geo-alt"></i>
+									<h3>Address</h3>
+									<p>Hostel-H Sirpur<br>NIT Raipur</p>
+								</div>
+							</a>
+							</div>
+					
+							<div class="col-md-6">
+								<div class="info-box">
+									<i class="bi bi-telephone"></i>
+									<h3>Call Us</h3>
+									<p>+91 6232192891<br>+91 6202872652</p>
+								</div>
+							</div>
+							
+							<div class="col-md-6">
+								<a href="mailto:dbuggerhelp@gmail.com" target="_blank">
+								<div class="info-box">
+									<i class="bi bi-envelope"></i>
+									<h3>Email Us</h3>
+									<p>dbuggerhelp@gmail.com<br>piyush.at.googl@gmail.com</p>
+								</div>
+							</a>
+							</div>
+					
+							<div class="col-md-6">
+								<div class="info-box">
+									<i class="bi bi-clock"></i>
+									<h3>Open Hours(For call)</h3>
+									<p>Monday - Friday<br>10:00AM - 06:00PM</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-lg-6">
+						<form action="forms/contact.php" method="post" class="php-email-form">
+							<div class="row gy-4">
+
+								<div class="col-md-6">
+									<input type="text" name="name" class="form-control" placeholder="Your Name"
+										required>
+								</div>
+
+								<div class="col-md-6 ">
+									<input type="email" class="form-control" name="email" placeholder="Your Email"
+										required>
+								</div>
+
+								<div class="col-md-12">
+									<input type="text" class="form-control" name="subject" placeholder="Subject"
+										required>
+								</div>
+
+								<div class="col-md-12">
+									<textarea class="form-control" name="message" rows="6" placeholder="Message"
+										required></textarea>
+								</div>
+
+								<div class="col-md-12 text-center">
+									<div class="loading">Loading</div>
+									<div class="error-message"></div>
+									<div class="sent-message">Your message has been sent. Thank you!</div>
+
+									<button type="submit"style="background-color: #000000;">Send Message</button>
+								</div>
+
+							</div>
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section><!-- End Contact Section -->
+
+	</main><!-- End #main -->
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer" class="footer">
+
+		<div class="footer-top" style="background: url('{% static "images/footer-bg.png" %}') no-repeat right top;">
+			<div class="container">
+				<div class="row gy-4">
+					<div class="col-lg-5 col-md-12 footer-info">
+						<a href="" class="logo d-flex align-items-center">
+							<img  src="{% static 'images/dbugger_logo.png' %}" alt="">
+							<span></span>
+						</a>
+						<div class="social-links mt-3">
+							<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+							<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+							<a href="https://www.instagram.com/dbugger_skills/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/dbuggerhelp/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+						</div>
+					</div>
+
+
+					<div class="col-lg-2 col-6 footer-links">
+						<h4>Our Services</h4>
+						<ul>
+							<li><i class="bi bi-chevron-right"></i>C++ Course</li>
+							<li><i class="bi bi-chevron-right"></i>Web Development</li>
+							<li><i class="bi bi-chevron-right"></i>DSA Course</li>
+							<li><i class="bi bi-chevron-right"></i>CP Course</li>
+							<!-- <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li> -->
+						</ul>
+					</div>
+
+					<div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+						<h4>Contact Us</h4>
+						<p>
+							Hostel - H, Sirpur <br>
+							NIT Raipur<br>
+							<!-- <br><br> -->
+							<strong>Phone:</strong> +91 6232192891<br>
+							<strong>Phone:</strong> +91 6202872652<br>
+							<strong>Email:</strong> dbuggerhelp@gmail.com<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+
+	<a href="#" style="background-color: #000000;" class="back-to-top d-flex align-items-center justify-content-center"><i
+			class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Vendor JS Files -->
+	<script src="{% static 'vendor/purecounter/purecounter_vanilla.js' %}"></script>
+	<script src="{% static 'vendor/aos/aos.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+	<script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+	<script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+	<script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+
+	<!-- Template Main JS File -->
+	<script src="{% static 'main.js' %}"></script>
+
+</body>
+
+</html>

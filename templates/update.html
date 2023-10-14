@@ -1,0 +1,87 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="{% static 'login.css' %}">
+  <link rel="stylesheet" href="{% static 'loginstyle.css' %}">
+  <title>Forgot credentials</title>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+  {% if messages %} {% for msg in messages %}
+  <script>
+    var x = "{{msg}}"
+    if ("{{msg}}" == -1) {
+      swal({
+        "title": "Alert",
+        "text": "No such email exists",
+        "icon": "warning",
+        "button": "Go Back"
+      }).then(() => {
+        history.back();
+      });
+    }
+    else {
+      swal({
+        "title": "Success",
+        "text": "Password changed, Note your useraname: {{msg}}",
+        "icon": "success",
+        "button": "Go Back"
+      }).then(() => {
+        history.back();
+      });
+    }
+  </script>
+  {% endfor %} {% endif %}
+
+  <div class="main-container">
+    <div class="left-section">
+      <div class="left-section-logo1">
+        <a href="/">
+          <img src="{% static 'images/logo1.png' %}" alt="">
+        </a>
+      </div>
+      <div class="left-section-logo2">
+        <a href="/">
+          <img src="{% static 'images/logo1.png' %}" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="middle-section">
+      <h1 data-heading="LOG IN"></h1>
+    </div>
+    <div class="right-section">
+      <form action="change" class="form__content" method="POST">
+        {% csrf_token %}
+        <h1 class="log-in">Update <span style="color:#F36527">Credentials</span></h1>
+        <div class="form__box">
+          <input required type="email" class="form__input" placeholder="YOUR EMAIL" name="email">
+          <label for="" class="form__label">YOUR EMAIL</label>
+          <div class="form__shadow"></div>
+        </div>
+        <div class="form__box">
+          <input required type="password" class="form__input" placeholder="New Password" name="passd">
+          <label for="" class="form__label">ENTER PASSWORD</label>
+          <div class="form__shadow"></div>
+        </div>
+        <div class="log-in-section">
+          <div class="not-a-member">
+            <p>No Account? <a href="/reg">Create One!</a></p>
+            <p>Forgot credentials? <a href="/update">Get it here!</a></p>
+          </div>
+          <div class="form__button">
+            <input type="Submit" class="form__submit" value="Submit">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  <script type="module" src="{% static 'main.js' %}"></script>
+</body>
+
+</html>
